@@ -19,12 +19,12 @@ class GifModel{
 
   factory GifModel.fromJson(Map<String,dynamic> json){
     return GifModel(
-        id: json['id'],
-        url: json['url'],
-        bitly_url: json['bitly_url'],
-        title: json['title'],
-        alt_text: json['alt_text'],
-        images: ImageModel.fromMapJson(json['images'])
+        id: json['id'] ?? '',
+        url: json['url'] ?? '',
+        bitly_url: json['bitly_url'] ?? '',
+        title: json['title'] ?? '',
+        alt_text: json['alt_text'] ?? '',
+        images: ImageModel.fromMapJson(json['images'] ?? '')
     );
   }
 }

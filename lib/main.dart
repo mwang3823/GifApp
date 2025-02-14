@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
               backgroundColor: Colors.white10,
               centerTitle: true,
               titleTextStyle: TextStyle(
-                  color: Colors.black,
+                  color: Colors.white70,
                   fontSize: 25,
                   fontWeight: FontWeight.bold)),
           buttonTheme: ButtonThemeData(
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
       scaffoldBackgroundColor: Colors.white12
       ),
       debugShowCheckedModeBanner: false,
-      home: Gifscreen(),
+      home: GifScreen(),
     );
   }
 }

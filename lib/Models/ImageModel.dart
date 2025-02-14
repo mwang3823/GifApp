@@ -15,11 +15,11 @@ class ImageModel {
 
   factory ImageModel.fromJson(Map<String, dynamic> json) {
     return ImageModel(
-        url: json['url'],
-        width: json['width'],
-        height: json['height'],
-        mp4: json['mp4'],
-        webp: json['webp']);
+        url: json['url'] ?? '',
+        width: json['width'] ?? '',
+        height: json['height'] ?? '',
+        mp4: json['mp4'] ?? '',
+        webp: json['webp'] ?? '');
   }
 
   static Map<String, ImageModel> fromMapJson(Map<String, dynamic> json) {
